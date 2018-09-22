@@ -3,6 +3,9 @@ $button-default-background: #fff;
 $global-font-family: 'Open Sans', sans-serif;
 $base-heading-font-family: 'Open Sans Condensed', sans-serif;
 $global-emphasis-color: #555;
+$notification-message-background: #333;
+$notification-message-font-size: .9em;
+$notification-message-color: #fefefe;
 
 // 2. Import default variables and available mixins.
 @import "scss/variables-theme.scss";

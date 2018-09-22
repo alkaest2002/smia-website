@@ -65,7 +65,7 @@
                     
                     <div class="uk-grid uk-margin-small-top">
                         <div class="uk-width-1-4@m uk-margin-bottom">
-                            <h3>1. Seleziona certificato</h3>
+                            <h3>1. Seleziona</h3>
                             <div v-for="(pane,index) in panes" :key="index">
                                 
                                 <div style="margin-bottom:5px">
@@ -216,6 +216,14 @@
         <script src="assets/js/uikit-icons.min.js"></script>
         <script src="assets/js/vue.min.js"></script>
         <script src="   assets/js/lodash.min.js"></script>
+        <script>
+           consent = UIkit.notification({
+                message: "Questo sito si avvale di cookie per fornire all'utente finale la migliore espereinza d'uso. Proseguendo la navigazione all'interno del sito, acconsenti all’uso dei cookie.",
+                status: 'scondary',
+                pos: 'top-right',
+                timeout: 4000
+            });
+        </script>
         <script>
             var appCertificati = new Vue({
                 el: "#app-certificati",
